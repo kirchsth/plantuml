@@ -1,4 +1,4 @@
-//    permits to start the build setting the javac release parameter, no parameter means build for java8:
+﻿//    permits to start the build setting the javac release parameter, no parameter means build for java8:
 // gradle clean build -x javaDoc -PjavacRelease=8
 // gradle clean build -x javaDoc -PjavacRelease=17
 //    also supported is to build first, with java17, then switch the java version, and run the test with java8:
@@ -46,6 +46,8 @@ dependencies {
 
 	"pdfRuntimeOnly"("org.apache.xmlgraphics:fop:2.9")
 	"pdfRuntimeOnly"("org.apache.xmlgraphics:batik-all:1.17")
+
+	implementation(files("libs/elk-full.jar"))
 }
 
 repositories {
