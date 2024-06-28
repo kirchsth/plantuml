@@ -42,12 +42,12 @@ dependencies {
 		testImplementation("org.mockito:mockito-core:5.+")
 		testImplementation("org.mockito:mockito-junit-jupiter:5.+")
 	}
-	testImplementation("org.scilab.forge:jlatexmath:1.0.7")
+	implementation("org.scilab.forge:jlatexmath:1.0.7")
+	
+    implementation("org.eclipse.elk:org.eclipse.elk.core:0.9.1")
+    implementation("org.eclipse.elk:org.eclipse.elk.alg.layered:0.9.1")
+    implementation("org.eclipse.elk:org.eclipse.elk.alg.mrtree:0.9.1")
 
-	"pdfRuntimeOnly"("org.apache.xmlgraphics:fop:2.9")
-	"pdfRuntimeOnly"("org.apache.xmlgraphics:batik-all:1.17")
-
-	implementation(files("libs/elk-full.jar"))
 }
 
 repositories {
